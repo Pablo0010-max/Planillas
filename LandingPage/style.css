@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #0a0908;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: small;
+    border-bottom: 2px solid #c6ff00;
+}
+
+.contenedor-logo {
+    width: 40px;
+    margin-left: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin-right: 50px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px; /* espacio entre el texto y la línea */
+    transition: all 0.3s ease;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #c6ff00;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+main{
+    background-color: #0a0908;
+    color: #f4f4f4;
+}
+
+#presentacion{
+    padding: 250px;
+    text-align: center;
+}
+
+#presentacion h1{
+    font-size: 64px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+#presentacion h2{
+    font-size: 64px;
+}
+
+#presentacion p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+    color: #c6ff00;
+}
+
+#beneficios {
+    padding-top: 65px;
+}
+
+#beneficios h2{
+    padding: 20px 20px;
+    text-align: center;
+}
+
+#beneficios h3{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family: 'Anton', sans-serif;
+    font-size: 36px;                /* tamaño grande del título */
+    font-weight: 400;               /* Anton ya es gruesa */
+    margin-bottom: 10px;
+}
+
+#beneficios p{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.contenedor-beneficios{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px; /* opcional, para espacio entre ítems */
+}
+
+.beneficio {
+    width:calc(100% / 3); /* o un ancho fijo como 200px */
+    background: #0a0908; /* solo para que lo veas mejor */
+    padding: 10px;
+    height: 333px;
+    box-sizing: border-box;
+    transition: all 0.6s ease; /* ✅ animación suave */
+    cursor: pointer;
+}
+
+.beneficio:hover {
+    background-color: #c6ff00; /* ✅ color de fondo en hover */
+    color: #000;               /* ✅ color de texto en hover */
+    box-shadow: 0 0 15px rgba(198, 255, 0, 0.4); /* opcional */
+}
+
+#imagen {
+    display: flex;
+    padding: 100px;
+    justify-content: space-between;
+}
+
+#imagen img{
+    width: 450px;
+    height: 650px;
+    margin-left: 20px;
+}
+
+#imagen h2{
+    font-size: 2.0;
+    margin-top: 325px;
+    margin-left: 240px;
+    color:  #c6ff00;
+}
+
+#imagen p{
+    margin-top: 20px;
+    margin-left: 240px;
+}
+
+#testimonios{
+    padding: 100px;
+    text-align: center;
+}
+
+#ubicacion{
+    padding: 50px;
+}
+
+#ubicacion iframe{
+    position: relative;
+    filter: grayscale(100%);
+    border-radius: 8px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+#contacto {
+    background-color: white;
+    height: 400px;
+    color: #000;
+}
+
+.ig {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 100px;
+    gap: 10px;
+}
+
+.ig img{
+    width: 40px;
+    height: 40px;
+}
+
+.ig a{
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+}
+
+.ig p {
+    margin-right: auto; 
+    font-size: 25px;
+}
+
+hr{
+    height: 1px;
+    width: 90%;
+    margin-top: 60px;
+    margin-left: 5%;
+}
+
+.otra-info .logo{
+    width: 70px;
+    margin-left: 5%;
+    padding-top: 20px;
+}
+
+.otra-info div{
+    margin-top: -60px;
+    margin-left: 86%;
+}
+
+.otra-info a img{
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    background-color:#0a0908;
+    color: white;
+    padding: 20px;
+}
+
+.mail {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mail p {
+    color: #eee;
+    text-decoration: none;
+}
